@@ -14,6 +14,13 @@ namespace Polimorfismo
             gato.Mover();
 
             Console.WriteLine($"O gato tem {gato.QtdOssos} ossos");
+
+            Crustaceo lagosta = new Crustaceo(TipoPele.Outro, 8, TipoHabitat.Aquatico, true, "lagosta");
+            lagosta.AddHexoesqueleto(true);
+            lagosta.Comer();
+            lagosta.Comunicar();
+            lagosta.Mover();
+            Console.WriteLine($"A lagosta tem hexoesqueleto? {lagosta.Hexoesquetelo}");
         }
     }
 }
