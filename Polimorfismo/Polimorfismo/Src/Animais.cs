@@ -11,13 +11,11 @@ namespace Polimorfismo.Src
         public int QtdOssos { get; set; }
 
         public Vertebrados(TipoPele pele, int qtdPatas, TipoHabitat habitat, 
-            bool cauda, string raca) : base(pele, qtdPatas, habitat, cauda, raca)
-        {
+            bool cauda, string raca) : base(pele, qtdPatas, habitat, cauda, raca){
 
         }
 
-        public void AddQtdOssos(int qtdOssos)
-        {
+        public void AddQtdOssos(int qtdOssos){
             QtdOssos = qtdOssos;
         }
 
@@ -26,19 +24,16 @@ namespace Polimorfismo.Src
     public class Invertebrados : Animal
     {
         public Invertebrados(TipoPele pele, int qtdPatas, TipoHabitat habitat, 
-            bool cauda, string raca) : base(pele, qtdPatas, habitat, cauda, raca)
-        {
+            bool cauda, string raca) : base(pele, qtdPatas, habitat, cauda, raca){
 
         }
 
         public bool Hexoesquetelo { get; set; }
 
-        public void AddHexoesqueleto(bool aux)
-        {
+        public void AddHexoesqueleto(bool aux){
             Hexoesquetelo = aux;
         }
 
 
     }
-
 }

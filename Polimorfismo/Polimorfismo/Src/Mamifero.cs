@@ -10,23 +10,19 @@ namespace Polimorfismo.Src
     {
         public string Praga { get; set; }
         public Mamifero(TipoPele pele, int qtdPatas, TipoHabitat habitat, 
-            bool cauda, string raca) : base(pele, qtdPatas, habitat, cauda, raca)
-        {
+            bool cauda, string raca) : base(pele, qtdPatas, habitat, cauda, raca){
         }
 
-        public void Comer()
-        {
+        public void Comer(){
             Console.WriteLine($"Mamifero {base.Raca} comendo!");
         }
 
-        public void Comunicar()
-        {
+        public void Comunicar(){
             Console.WriteLine($"Mamifero {base.Raca} está se comunicando!");
         }
 
-        public void Mover()
-        {
-            Console.WriteLine($"Mamifero {base.Raca} está se comunicando!");
+        public void Mover(){
+            Console.WriteLine($"Mamifero {base.Raca} está se movendo!");
         }
     }
 }

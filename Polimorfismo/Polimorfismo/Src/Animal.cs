@@ -14,18 +14,15 @@ namespace Polimorfismo.Src
         public bool Cauda { get; set; }
         public string Raca { get; set; }
 
-        public virtual void Respirar()
-        {
+        public virtual void Respirar(){
             Console.WriteLine("Respiração comum...");
         }
 
-        public virtual void Caracteristicas()
-        {
+        public virtual void Caracteristicas(){
             Console.WriteLine("Caracteristicas comum...");
         }
 
-        public Animal(TipoPele pele, int qtdPatas, TipoHabitat habitat, bool cauda, string raca)
-        {
+        public Animal(TipoPele pele, int qtdPatas, TipoHabitat habitat, bool cauda, string raca){
             Pele = pele;
             QtdPatas = qtdPatas;
             Habitat = habitat;

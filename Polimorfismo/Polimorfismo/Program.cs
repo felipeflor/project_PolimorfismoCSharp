@@ -5,8 +5,7 @@ namespace Polimorfismo
 {
     public class Program
     {
-        static void Main(string[] args)
-        {
+        static void Main(string[] args){
             var gato = new Mamifero(TipoPele.Cabelo, 4, TipoHabitat.Terrestre, true, "gato");
             gato.AddQtdOssos(150);
 
