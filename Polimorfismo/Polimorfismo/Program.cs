@@ -12,6 +12,7 @@ namespace Polimorfismo
             gato.Comer();
             gato.Comunicar();
             gato.Mover();
+            gato.Respirar();
 
             Console.WriteLine($"O gato tem {gato.QtdOssos} ossos");
 
@@ -20,7 +21,17 @@ namespace Polimorfismo
             lagosta.Comer();
             lagosta.Comunicar();
             lagosta.Mover();
+            lagosta.Respirar();
             Console.WriteLine($"A lagosta tem hexoesqueleto? {lagosta.Hexoesquetelo}");
+
+            Aracnidio aranha = new Aracnidio(TipoPele.Cabelo, 10, TipoHabitat.Terrestre, false, "aranha");
+            
+            aranha.Comer();
+            aranha.Mover();
+            aranha.Comunicar();
+            aranha.Respirar();
+            aranha.Pelo = true;
+            Console.WriteLine($"A aranha possui pelos? {aranha.Pelo}");
         }
     }
 }
