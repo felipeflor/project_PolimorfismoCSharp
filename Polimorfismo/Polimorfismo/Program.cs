@@ -38,6 +38,14 @@ namespace Polimorfismo
             passarinho.Comunicar();
             passarinho.AddQtdOssos(15);
 
+            Console.WriteLine("\n");
+            Peixe peixe = new Peixe(TipoPele.Escama, 0, TipoHabitat.Aquatico, true, "Nemo");
+            peixe.Comer();
+            peixe.Mover();
+            peixe.Respirar();
+            peixe.Comunicar();
+            
+
         }
     }
 }
