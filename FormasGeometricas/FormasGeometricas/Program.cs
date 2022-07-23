@@ -46,6 +46,9 @@ namespace FormasGeometricas
                         int rectangleBase = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Inform the hight: ");
                         int rectangleHight = Convert.ToInt32(Console.ReadLine());
+
+                    Square rectangle = new Square(rectangleBase, rectangleHight);
+                    Console.WriteLine($"The area of rectangle are: {rectangle.CalcularArea()}\n");
                         break;
 
                     default:
